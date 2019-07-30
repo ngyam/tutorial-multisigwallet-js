@@ -1,0 +1,38 @@
+{
+  "name": "tutorial-multisigwallet-js",
+  "version": "1.0.0",
+  "description": "Gnosis Multisig wallet tutorial with JS",
+  "main": "utils.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ganache": "./scripts/ganache.sh",
+    "compile": "cd node_modules/multisig-wallet-gnosis && npx truffle compile --all",
+    "install:kernel": "npm install -g ijavascript && ijsinstall",
+    "start": "ijsnotebook",
+    "postinstall": "./scripts/postinstall.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngyam/tutorial-multisigwallet-js.git"
+  },
+  "keywords": [
+    "gnosis",
+    "multisig",
+    "wallet",
+    "tutorial",
+    "node",
+    "jupyter"
+  ],
+  "author": "Adam Nagy (ngy.am.zs@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngyam/tutorial-multisigwallet-js/issues"
+  },
+  "homepage": "https://github.com/ngyam/tutorial-multisigwallet-js#readme",
+  "dependencies": {
+    "ganache-cli": "^6.4.4",
+    "multisig-wallet-gnosis": "git+https://github.com/gnosis/MultiSigWallet.git#v1.6.0",
+    "truffle": "^5.0.29",
+    "web3": "^1.2.0"
+  }
+}
